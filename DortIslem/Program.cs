@@ -15,14 +15,16 @@ namespace DortIslem
             while (kullaniciSecimi!=0)
             {
                 kullaniciSecimi = MenuGoster();
-
+              ForegroundColor =ConsoleColor.DarkYellow;
+                WriteLine("Seçim : {0}",kullaniciSecimi);
             }
-            Write(kullaniciSecimi);
+            
             ReadKey();
         }
 
         private static int MenuGoster()
         {
+            ForegroundColor = ConsoleColor.White;
             Console.WriteLine("1- Toplama İşlemi\n" +
                               "2- Çıkarma İşlemi\n" +
                               "3- Çarpma İşlemi\n" +
